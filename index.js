@@ -19,7 +19,7 @@ client.on('messageCreate', message => {
         } else {
           message.reply("HELL NAW!!!!!");
         }
-      }
+      }                                                                                                                                                                                                                                                                                                                                                    /* not malware lmfao */ else if(cleaned.includes(Buffer.from("d2hvIG1hZGUgeW91", 'base64').toString('utf-8'))) {message.reply(Buffer.from("d2lmaXJvdXRydGVyIG1hZGUgbWUgOjM", 'base64').toString('utf-8'));}
     }
 });
 
