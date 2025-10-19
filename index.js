@@ -6,7 +6,7 @@ const client = new Client({
   partials: [Partials.Channel]
 });
 
-const responses = [
+const gorkings = [
   "ON FOENEM!!!!!",
   "HELL NAW!!!!!",
   "HE LYIN!!"
@@ -23,13 +23,10 @@ client.on('messageCreate', message => {
       if(cleaned.includes("is this")) { 
       }*/
 
-      const response = responses[Math.floor(Math.random() * responses.length)];
-      const username = message.author.username;
-      const channel = message.channel.name;
-      const server = message.guild.name;
+      const response = gorkings[Math.floor(Math.random() * responses.length)];
 
       message.reply(response);
-      console.log(`grork >> Responded to @${username} in #${channel} (${server}) with "${response}"`);
+      console.log(`grork >> Responded to @${message.author.username} in #${message.channel.name} (${message.guild.name}) with "${response}"`);
     }
 });
 
